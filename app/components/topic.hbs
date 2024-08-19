@@ -5,7 +5,11 @@
 <div class="tabs is-centered">
   <ul>
     {{#each @topic as |option|}}
-    <li><a>{{option}}</a></li>
+    <li {{on 'click' (fn this.handleTabSelection option)}} >
+      <a>
+        {{option}}
+      </a>
+    </li>
     {{/each}}
   </ul>
 </div>
