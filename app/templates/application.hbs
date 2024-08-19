@@ -1,7 +1,12 @@
-{{page-title "Frontend"}}
+{{page-title "Tasks"}}
 
-{{! The following component displays Ember's default welcome message. }}
-<WelcomePage />
-{{! Feel free to remove this! }}
+
+
+
+<div class="container">
+    <Topic @title="My Tasks" @topic={{@model.tasks}} />
+    {{!-- <h1 class="title">My Bulma Styled Ember App</h1>
+    <button class="button is-primary" type="button">Primary Button</button> --}}
+</div>
 
 {{outlet}}
